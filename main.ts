@@ -24,7 +24,7 @@ class App {
 
         const camera = new FreeCamera("camera", new Vector3(0, 5, -10), scene);
         camera.setTarget(Vector3.Zero());
-        camera.attachToCanvas(this.canvas, true);
+        camera.attachControl(this.canvas, true);
 
         const light = new HemisphericLight("light", new Vector3(0, 1, 0), scene);
         light.intensity = 0.7;
